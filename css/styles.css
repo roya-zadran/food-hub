@@ -1,0 +1,128 @@
+/* General reset and fonts */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Hero section with background image and overlay */
+.hero-section {
+  position: relative;
+  height: 70vh;
+  background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1470&q=80')
+    center center/cover no-repeat;
+}
+
+.hero-section .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  border-radius: 12px;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-size: 1.8rem;
+  color: #ff5722;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ff5722;
+}
+
+/* Card image size fix */
+.card-img-top {
+  width: 100%;
+  height: 200px;         /* Make all images same height */
+  object-fit: cover;     /* Crop images without stretching */
+  display: block;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* Cards hover scale effect */
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0.5rem 1rem rgba(255, 87, 34, 0.3);
+}
+
+/* Card titles */
+.card-title {
+  color: #ff5722;
+  font-weight: 600;
+}
+
+/* Badges */
+.badge.available {
+  background-color: #28a745;
+  color: white;
+  font-weight: 600;
+  padding: 0.4em 0.8em;
+  border-radius: 0.4rem;
+}
+
+.badge.unavailable {
+  background-color: #dc3545;
+  color: white;
+  font-weight: 600;
+  padding: 0.4em 0.8em;
+  border-radius: 0.4rem;
+}
+
+/* Form labels */
+.form-label {
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #ff5722;
+  border-color: #ff5722;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #e64a19;
+  border-color: #e64a19;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  font-weight: 600;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+/* Footer styles */
+footer {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+footer .social-icons a {
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover,
+footer .social-icons a:focus {
+  color: #ff5722;
+}
+
+/* Responsive fixes */
+@media (max-width: 767.98px) {
+  .navbar-nav {
+    gap: 1rem;
+  }
+}
