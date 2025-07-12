@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Foodie Hub</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Foodie Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#restaurants">Restaurants</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#order">Order</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section d-flex align-items-center justify-content-center text-center text-white">
+    <div class="overlay p-4">
+      <h1 class="display-4 fw-bold">Welcome to Foodie Hub</h1>
+      <p class="lead">Order your favorite meals instantly!</p>
+    </div>
+  </section>
+
+  <!-- Restaurants Section -->
+  <section id="restaurants" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Restaurants</h2>
+      <div class="row g-4">
+        <!-- 6 Cards -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card h-100 shadow-sm hover-scale">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80"
+              class="card-img-top" alt="Pizza Palace" />
+            <div class="card-body">
+              <h5 class="card-title">Pizza Palace</h5>
+              <p class="card-text">Authentic Italian pizza and pasta.</p>
+              <a href="#menu" class="btn btn-primary btn-sm">View Menu</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card h-100 shadow-sm hover-scale">
+            <img src="assests/Kabul House.jpg"
+              class="card-img-top" alt="Kabul Biryani House" />
+            <div class="card-body">
+              <h5 class="card-title">Kabul Biryani House</h5>
+              <p class="card-text">Spicy and flavorful Afghan-style biryani.</p>
+              <a href="#menu" class="btn btn-primary btn-sm">View Menu</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card h-100 shadow-sm hover-scale">
+            <img src="assests/Herat Kabab.jpg"
+              class="card-img-top" alt="Herat Kebab" />
+            <div class="card-body">
+              <h5 class="card-title">Herat Kebab</h5>
+              <p class="card-text">Tender kebabs with traditional Afghan spices.</p>
+              <a href="#menu" class="btn btn-primary btn-sm">View Menu</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card h-100 shadow-sm hover-scale">
+            <img src="assests/Mazar.jpg"
+              class="card-img-top" alt="Mazar Dining" />
+            <div class="card-body">
+              <h5 class="card-title">Mazar Dining</h5>
+              <p class="card-text">Home-style curries, rice, and sweets from Mazar.</p>
+              <a href="#menu" class="btn btn-primary btn-sm">View Menu</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card h-100 shadow-sm hover-scale">
+            <img src="assests/Kandahar.jpg"
+              class="card-img-top" alt="Kandahar Plaza" />
+            <div class="card-body">
+              <h5 class="card-title">Kandahar Plaza</h5>
+              <p class="card-text">Savory dishes with rich Kandahari flavors.</p>
+              <a href="#menu" class="btn btn-primary btn-sm">View Menu</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card h-100 shadow-sm hover-scale">
+            <img src="assests/bamyan.jpg"
+              class="card-img-top" alt="Bamyan Garden" />
+            <div class="card-body">
+              <h5 class="card-title">Bamyan Garden</h5>
+              <p class="card-text">Cozy meals with scenic mountain inspiration.</p>
+              <a href="#menu" class="btn btn-primary btn-sm">View Menu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section with Carousel -->
+  <section id="menu" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Menu</h2>
+
+      <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Carousel Inner -->
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <img src="assests/mgarita pizza.jpg"
+                    class="card-img-top" alt="Margherita Pizza" />
+                  <div class="card-body">
+                    <h5>Margherita Pizza</h5>
+                    <p>Classic cheese pizza with fresh basil.</p>
+                    <p><strong>$10</strong></p>
+                    <span class="badge available">Available</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <img src="assests/veggie delight.jpg"
+                    class="card-img-top" alt="Veggie Delight" />
+                  <div class="card-body">
+                    <h5>Veggie Delight</h5>
+                    <p>Fresh vegetables on crispy thin crust.</p>
+                    <p><strong>$11</strong></p>
+                    <span class="badge available">Available</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <img src="assests/bbq chicken pizza.jpg"
+                    class="card-img-top" alt="BBQ Chicken Pizza" />
+                  <div class="card-body">
+                    <h5>BBQ Chicken Pizza</h5>
+                    <p>Barbecue sauce, chicken, and red onions.</p>
+                    <p><strong>$12</strong></p>
+                    <span class="badge unavailable">Unavailable</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <img src="assests/naan bread.jpg"
+                    class="card-img-top" alt="Garlic Bread" />
+                  <div class="card-body">
+                    <h5>Naan Bread</h5>
+                    <p>Toasted bread with garlic and herbs.</p>
+                    <p><strong>$5</strong></p>
+                    <span class="badge available">Available</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <img src="assests/tandoori chicken.jpg"
+                    class="card-img-top" alt="Tandoori Chicken" />
+                  <div class="card-body">
+                    <h5>Tandoori Chicken</h5>
+                    <p>Spiced and grilled chicken with yogurt marinade.</p>
+                    <p><strong>$15</strong></p>
+                    <span class="badge available">Available</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <img src="assests/lumb curry.jpg"
+                    class="card-img-top" alt="Lamb Curry" />
+                  <div class="card-body">
+                    <h5>Lamb Curry</h5>
+                    <p>Rich and spicy slow-cooked lamb curry.</p>
+                    <p><strong>$18</strong></p>
+                    <span class="badge available">Available</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <img src="assests/naan bread.jpg"
+                    class="card-img-top" alt="Naan Bread" />
+                  <div class="card-body">
+                    <h5>Naan Bread</h5>
+                    <p>Soft and warm Indian flatbread.</p>
+                    <p><strong>$3</strong></p>
+                    <span class="badge available">Available</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <img src="assests/tandoori chicken.jpg"
+                    class="card-img-top" alt="Tandoori Chicken" />
+                  <div class="card-body">
+                    <h5>Tandoori Chicken</h5>
+                    <p>Spiced and grilled chicken with yogurt marinade.</p>
+                    <p><strong>$15</strong></p>
+                    <span class="badge available">Available</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <img src="assests/lumb curry.jpg"
+                    class="card-img-top" alt="Lamb Curry" />
+                  <div class="card-body">
+                    <h5>Lamb Curry</h5>
+                    <p>Rich and spicy slow-cooked lamb curry.</p>
+                    <p><strong>$18</strong></p>
+                    <span class="badge available">Available</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Form Section -->
+  <section id="order" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Place Your Order</h2>
+      <form action="#" class="row g-3">
+        <div class="col-lg-6 col-12">
+          <label for="customerName" class="form-label">Customer Name</label>
+          <input type="text" class="form-control" id="customerName" placeholder="Enter your name" required />
+        </div>
+        <div class="col-lg-6 col-12">
+          <label for="phoneNumber" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required />
+        </div>
+
+        <div class="col-lg-6 col-12">
+          <label for="restaurantSelect" class="form-label">Select Restaurant</label>
+          <select id="restaurantSelect" class="form-select" required>
+            <option value="" selected disabled>Select Restaurant</option>
+            <option>Pizza Palace</option>
+            <option>Kabul Biryani House</option>
+            <option>Herat Kebab</option>
+            <option>Mazar Dining</option>
+            <option>Kandahar Plaza</option>
+            <option>Bamyan Garden</option>
+          </select>
+        </div>
+
+        <div class="col-lg-6 col-12">
+          <label class="form-label d-block">Menu Items</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Margherita Pizza" id="dish1" />
+            <label class="form-check-label" for="dish1">Margherita Pizza (x1)</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Veggie Delight" id="dish2" />
+            <label class="form-check-label" for="dish2">Veggie Delight (x1)</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="BBQ Chicken Pizza" id="dish3" />
+            <label class="form-check-label" for="dish3">BBQ Chicken Pizza (x1)</label>
+          </div>
+        </div>
+
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-success px-5">Submit Order</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="assests/food Hub.webp"
+            alt="About Foodie Hub" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-6">
+          <h3>About Foodie Hub</h3>
+          <p>
+            Foodie Hub connects food lovers with top local restaurants. Browse menus, place orders, and enjoy great food anytime.
+            We strive to bring the best food experiences right to your doorstep with ease and convenience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer id="contact" class="py-4 bg-white border-top">
+    <div
+      class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-3">
+      <div>
+        <p class="mb-1">Email: contact@foodiehub.com</p>
+        <p class="mb-1">Phone: +123 456 7890</p>
+        <p class="mb-0">Address: 123 Flavor Street, Taste City</p>
+      </div>
+      <div class="social-icons">
+        <a href="#" class="text-dark me-3 fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-dark me-3 fs-4" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-dark fs-4" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle (includes JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
